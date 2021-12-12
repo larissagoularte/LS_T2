@@ -1,0 +1,65 @@
+<!-- This is views/showAll.ejs --> 
+
+
+<style>
+body {
+  background-color: #b3b3ff;
+  padding: 50px;
+}
+
+p {
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1em; 
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  position: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+a{
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#botao{
+  font-size:13px;
+  text-align: center;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  position: center;
+  text-decoration : none;
+  text-align: center;
+  padding:16px 32px;
+  color:#fff;
+  background: #587286;
+  border:0;
+  border-radius: 4px;
+
+}
+</style>
+
+
+<center>
+
+<h1>Crédito da loja: </h1>
+<% loja.forEach( (loja) => { %> 
+<p>Nome da loja: <%= loja.nome %></p>
+<p>Crédito: <%= loja.credito %> €</p>
+<br>
+<% }); %> 
+
+
+<br>
+
+<a href='/' id ="botao" >Voltar</a>
+</center>

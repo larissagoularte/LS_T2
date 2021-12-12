@@ -1,0 +1,124 @@
+<!-- This is views/personInfo.ejs -->
+
+
+
+<style>
+p {
+  color: #b3b3ff;
+  font-family: Segoe UI, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom:20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  position: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b3b3ff;
+  padding: 50px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom:20px;
+}
+
+label {
+  text-align: center;
+  color: white;
+  font-family: Segoe UI, sans-serif;
+  position: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a{
+  font-size:13px;
+  text-align: center;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  position: center;
+  text-decoration : none;
+  text-align: center;
+  padding:16px 32px;
+  margin:10px;
+  color:#fff;
+  background: #587286;
+  border:0;
+  border-radius: 4px;
+}
+
+form{
+  font-size:13px;
+  text-align: center;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  color:#fff;
+}
+
+
+input[type = submit]{
+  font-size:13px;
+  text-align: center;
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  position: center;
+  text-decoration : none;
+  text-align: center;
+  padding:16px 32px;
+  margin:10px;
+  color:#fff;
+  background: #587286;
+  border:0;
+  border-radius: 4px;
+}
+</style>
+
+<h1>Livraria</h1>
+<p>Editar Dados</p>
+
+<form action='/update' method='post'>
+
+<p>ID: <%= livro.id %><br></p>
+<input name='id' value='<%= livro.id %>' hidden>
+
+Título: <input name='titulo' value='<%=livro.titulo %>'>
+<br>
+
+Autor: <input name='autor' value='<%= livro.autor %>'>
+<br>
+
+Data: <input name='data' value='<%= livro.data %>'>
+<br>
+
+ID: <input name='id' value='<%= livro.id %>'>
+<br>
+
+Preço de Compra: 
+<input name='precocompra' value='<%= livro.precocompra %>'>
+<br>
+
+Preço de Venda: 
+<input name='precovenda' value='<%= livro.precovenda %>'>
+<br>
+
+<input type='submit' value='Update'>
+</form>
