@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 
-uri="mongodb+srv://scripting:2021@cluster0.iv2p2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+uri="mongodb+srv://scripting:2021@cluster0.vu9fo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(uri);
 
 var Schema = mongoose.Schema;
